@@ -15,3 +15,5 @@ export interface InsightMetric { id: string; label: string; value: number; chang
 export interface HookVariant { id: string; text: string; score: number }
 export interface TranscriptMoment { text: string; start: number; end: number; assetId: string }
 export interface ScheduledPost { id: string; clipId: string; clipTitle: string; platform: string; scheduledAt: string; status: "scheduled" | "published" }
+export interface AssistantResponse { command: string; timelineId: string; timeline?: Timeline; applied?: string[] }
+export interface AuthResponse { token: string; user: { id: string; email: string; name: string } }
